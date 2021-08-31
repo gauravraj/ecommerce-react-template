@@ -1,0 +1,80 @@
+@import "../../constants/variables.scss";
+
+header {
+  height: 150px;
+  background-color: #ffffff;
+  padding: 0 30px;
+
+  .top-section {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 24px;
+        color: $purple;
+      }
+
+      img {
+        width: 22px;
+        height: 22px;
+        margin-right: 20px;
+        margin-top: 3px;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 720px) {
+        display: none;
+      }
+
+      .icon {
+        margin: 0 20px;
+        cursor: pointer;
+      }
+    }
+
+    .extra-links {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        margin: 0 15px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bottom-section {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    .link {
+      margin: 0 30px;
+      font-size: 1.4rem;
+      color: $purple;
+
+      @media (max-width: 720px) {
+        margin: 0 15px;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

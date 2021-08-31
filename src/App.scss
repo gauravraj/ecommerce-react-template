@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "PlayfairRegular";
+  src: url(./assets/fonts/PlayfairDisplay-Regular.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MuliBold";
+  src: url(./assets/fonts/Muli-Bold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MuliSemiBold";
+  src: url(./assets/fonts/Muli-SemiBold.ttf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MuliRegular";
+  src: url(./assets/fonts/Muli.ttf);
+  font-display: swap;
+}
+
+@import "./constants/variables.scss";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "PlayfairRegular";
+  background-color: #f6f6f6;
+}
+
+.wrapper {
+  padding: 0 80px;
+
+  @media (max-width: 1024px) {
+    padding: 0 50px;
+  }
+
+  @media (max-width: 920px) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: 720px) {
+    padding: 0 15px;
+  }
+
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    @media (max-width: 720px) {
+      margin-top: 30px;
+    }
+  }
+}
